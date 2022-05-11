@@ -6,22 +6,6 @@
   font-family: "Nanum Gothic", sans-serif;
 }
 
-.sec-size {
-  width: 1520px;
-  height: 80vh;
-  overflow-x: hidden;
-  /* background-color: lightcoral; */
-  margin: 0 auto;
-}
-
-.sec-size2 {
-  width: 1520px;
-  height: 130vh;
-  overflow-x: hidden;
-  /* background-color: lightcoral; */
-  margin: 0 auto;
-}
-
 /* .sec-size:nth-child(even) {
   background-color: rgb(255, 181, 181);
 }
@@ -103,38 +87,105 @@
 
 /* how */
 .how {
+  background-color: #eeeeee;
+}
+
+.how .how-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EEEEEE;
+  width: 1520px;
+  height: 80vh;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.how .text-wrap {
+.how .how-container .text-wrap {
   margin-left: 128px;
 }
-.how .text-wrap h2 {
+.how .how-container .text-wrap h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 35px;
 }
-.how .text-wrap p {
+.how .how-container .text-wrap p {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
 }
-.how .text-wrap>p {
+.how .how-container .text-wrap > p {
   margin-bottom: 30px;
 }
-.how .hicon {
+.how .how-container .hicon {
   margin-right: 128px;
   width: 350px;
   height: 350px;
 }
 
-.how .hicon img {
+.how .how-container .hicon img {
   width: 350px;
   height: 350px;
 }
 
+/* printmethod */
+.printmethod {
+  background-color: white;
+}
+
+.printmethod .printmethod-container {
+  width: 1520px;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.printmethod .box {
+  width: 500px;
+  height: 500px;
+  background-color: #c4c4c4;
+}
+
+.printmethod .align-wrap {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.printmethod .printmethod-container .fdm-wrap .fimg {
+  margin-left: 128px;
+}
+.printmethod .printmethod-container .fdm-wrap .text-wrap {
+  margin-right: 128px;
+}
+.printmethod .printmethod-container .sla-wrap .text-wrap {
+  margin-left: 128px;
+  text-align: right;
+}
+.printmethod .printmethod-container .sla-wrap .simg {
+  margin-right: 128px;
+}
+.printmethod h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 36px;
+}
+.printmethod p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.printmethod p:nth-child(2) {
+  margin-bottom: 10px;
+}
+.printmethod p:nth-child(3) {
+  margin-bottom: 30px;
+}
+/* .printmethod .fdm-wrap .text-wrap h2{
+  margin-right: 128px;
+} */
