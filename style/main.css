@@ -7,11 +7,30 @@
 }
 
 .sec-size {
-  width: 100%;
+  width: 1520px;
   height: 80vh;
   overflow-x: hidden;
+  /* background-color: lightcoral; */
+  margin: 0 auto;
 }
 
+.sec-size2 {
+  width: 1520px;
+  height: 130vh;
+  overflow-x: hidden;
+  /* background-color: lightcoral; */
+  margin: 0 auto;
+}
+
+/* .sec-size:nth-child(even) {
+  background-color: rgb(255, 181, 181);
+}
+
+.sec-size:nth-child(odd) {
+  background-color: rgb(255, 214, 157);
+} */
+
+/* dot */
 .dot-contain {
   position: fixed;
   height: 100vh;
@@ -26,7 +45,7 @@
   height: 15px;
   background-color: black;
   border-radius: 50%;
-  margin: 10px 0 10px 20px;
+  margin: 10px 0 10px 30px;
 }
 
 /* main */
@@ -52,7 +71,7 @@
 
 .main .container .text-wrap {
   position: absolute;
-  top: 400px;
+  top: calc(100vh - 63%);
   right: 200px;
   text-align: right;
   /* 수정하기 */
@@ -81,3 +100,41 @@
   line-height: 24px;
   color: white;
 }
+
+/* how */
+.how {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.how .text-wrap {
+  margin-left: 128px;
+}
+.how .text-wrap h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 35px;
+}
+.how .text-wrap p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.how .text-wrap>p {
+  margin-bottom: 30px;
+}
+.how .hicon {
+  margin-right: 128px;
+  width: 350px;
+  height: 350px;
+}
+
+.how .hicon img {
+  width: 350px;
+  height: 350px;
+}
+
