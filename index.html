@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
     <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>3D 프린터 정보 공작소</title>
   </head>
   <body>
@@ -30,13 +32,13 @@
     <!-- how -->
     <section class="how align">
       <div class="how-container">
+        <div class="hicon">
+          <img src="./asset/icons/3dicon.png" alt="" />
+        </div>
         <div class="text-wrap">
           <h2>3D 프린팅이란?</h2>
           <p>삼차원 형상을 구현하기 위한 3차원 도면을 출력장치를 통해</p>
           <p>가상의 물체를 현실화 시키는 것</p>
-        </div>
-        <div class="hicon">
-          <img src="./asset/icons/3dicon.png" alt="" />
         </div>
       </div>
     </section>
@@ -67,8 +69,38 @@
           </div>
         </div>
       </div>
+      <!-- SLS -->
+      <!-- <div class="align-wrap sls-wrap">
+        <div class="slimg">
+          <div class="box"></div>
+        </div>
+        <div class="text-wrap">
+          <h2>FDM</h2>
+          <p>FDM(Fused Deposition Modeling)은 재료를 녹는점 이상의 온도로 녹인 후 일정한</p>
+          <p>두께로 선을 그리면서 한 층씩 쌓아 올리는 방식의 프린터 이다</p>
+          <p>대중적인 프린터 방식으로 많은 사람들이 쉽게 접근하는 방식이다</p>
+        </div>
+      </div> -->
     </section>
-    <section class="process sec-size"></section>
+    <section class="process sec-size">
+      <div class="mo-wrap">
+        <!-- <a href="#"><img src="" alt=""></a> -->
+        <a href="#"><div class="circle"></div></a>
+        <span>3D 모델링</span>
+      </div>
+      <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+      <div class="printing-wrap">
+        <!-- <a href="#"><img src="" alt=""></a> -->
+        <a href="#"><div class="circle"></div></a>
+        <span>프린팅</span>
+      </div>
+      <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+      <div class="after-wrap">
+        <!-- <a href="#"><img src="" alt=""></a> -->
+        <a href="#"><div class="circle"></div></a>
+        <span>후가공</span>
+      </div>
+    </section>
     <section class="recommend sec-size"></section>
     <!-- <p class="main_sub">(with. 3D 프린터 정보공작소)</p> -->
   </body>
