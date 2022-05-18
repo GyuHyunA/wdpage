@@ -6,14 +6,6 @@
   font-family: "Nanum Gothic", sans-serif;
 }
 
-/* .sec-size:nth-child(even) {
-  background-color: rgb(255, 181, 181);
-}
-
-.sec-size:nth-child(odd) {
-  background-color: rgb(255, 214, 157);
-} */
-
 /* dot */
 .dot-contain {
   position: fixed;
@@ -37,7 +29,6 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 .main .container {
@@ -51,6 +42,8 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main .container .text-wrap {
@@ -58,7 +51,6 @@
   top: calc(100vh - 63%);
   right: 200px;
   text-align: right;
-  /* 수정하기 */
 }
 .main .container .text-wrap .sub_title {
   font-style: normal;
@@ -92,22 +84,23 @@
 
 .how .how-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 1520px;
   height: 80vh;
-  overflow-x: hidden;
   margin: 0 auto;
+  text-align: center;
 }
 
-.how .how-container .text-wrap {
-  margin-left: 128px;
-}
+/* .how .how-container .text-wrap {
+
+} */
 .how .how-container .text-wrap h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 .how .how-container .text-wrap p {
   font-style: normal;
@@ -119,14 +112,15 @@
   margin-bottom: 30px;
 }
 .how .how-container .hicon {
-  margin-right: 128px;
-  width: 350px;
-  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .how .how-container .hicon img {
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
 }
 
 /* printmethod */
@@ -140,21 +134,20 @@
   margin: 0 auto;
 }
 
-.printmethod .box {
-  width: 500px;
-  height: 500px;
-  background-color: #c4c4c4;
-}
-
-.printmethod .align-wrap {
+.printmethod .printmethod-container .fdm-wrap {
   height: 80vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .printmethod .printmethod-container .fdm-wrap .fimg {
   margin-left: 128px;
+}
+.printmethod .printmethod-container .fdm-wrap .fimg .box {
+  width: 350px;
+  height: 350px;
+  background-color: #c4c4c4;
 }
 .printmethod .printmethod-container .fdm-wrap .text-wrap {
   margin-right: 128px;
