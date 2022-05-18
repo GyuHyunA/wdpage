@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -12,7 +12,7 @@
   height: 100vh;
   width: 30px;
   left: 0;
-  top: calc(100vh - 60%);
+  top: calc(100vh - 58vh);
   z-index: 3;
 }
 
@@ -46,9 +46,11 @@
   background-size: cover;
 }
 
+
+
 .main .container .text-wrap {
   position: absolute;
-  top: calc(100vh - 63%);
+  top: calc(100vh - 58vh);
   right: 200px;
   text-align: right;
 }
@@ -130,12 +132,12 @@
 
 .printmethod .printmethod-container {
   width: 1520px;
-  height: 80vh;
   margin: 0 auto;
 }
 
 .printmethod .printmethod-container .fdm-wrap {
-  height: 80vh;
+  margin-top: 10vh;
+  /* height: 40vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -150,14 +152,27 @@
   background-color: #c4c4c4;
 }
 .printmethod .printmethod-container .fdm-wrap .text-wrap {
-  margin-right: 128px;
+  margin-left: 100px;
 }
-.printmethod .printmethod-container .sla-wrap .text-wrap {
-  margin-left: 128px;
-  text-align: right;
+
+.printmethod .printmethod-container .sla-wrap {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10vh;
 }
 .printmethod .printmethod-container .sla-wrap .simg {
   margin-right: 128px;
+}
+.printmethod .printmethod-container .sla-wrap .simg .box {
+  width: 350px;
+  height: 350px;
+  background-color: #c4c4c4;
+}
+.printmethod .printmethod-container .sla-wrap .text-wrap {
+  margin-right: 100px;
+  text-align: right;
 }
 .printmethod h2 {
   font-style: normal;
@@ -168,7 +183,7 @@
 }
 .printmethod p {
   font-style: normal;
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 20px;
   line-height: 20px;
 }
@@ -182,3 +197,44 @@
 /* .printmethod .fdm-wrap .text-wrap h2{
   margin-right: 128px;
 } */
+
+.process {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.process .braket {
+  margin: 0 100px;
+  font-size: 40px;
+}
+
+.process [class*="wrap"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10vh;
+  margin-bottom: 10vh; */
+}
+
+.process [class*="wrap"] span{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.circle {
+  width: 260px;
+  height: 260px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  margin-bottom: 60px;
+  transition: 0.5s;
+}
+
+.circle:hover {
+  filter: brightness(80%);
+}
