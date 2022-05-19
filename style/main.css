@@ -38,14 +38,17 @@
   overflow: hidden;
 }
 
-.main .container .bg-img {
+/* .main .container .bg-img {
   position: relative;
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
+.main .container video{
+  
+}
 
 
 .main .container .text-wrap {
@@ -237,4 +240,12 @@
 
 .circle:hover {
   filter: brightness(50%);
+}
+
+.modal{
+  position: absolute;
+}
+
+.modal .filter{
+  background-color: rgba(0, 0, 0, 0.8);
 }
