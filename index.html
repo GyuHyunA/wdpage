@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
-    <script src="./js/main.js"></script>
+    <script async src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>3D 프린터 정보 공작소</title>
@@ -23,7 +23,7 @@
       <div class="container">
         <!-- <div class="bg-img" style="background-image: url(./asset/images/mian_3dimg.png)"></div> -->
         <div class="video">
-          <video src="./asset/videos/3dv1.mp4" class="bg" autoplay muted preload="auto"></video>
+          <video src="./asset/videos/3dv1.mp4" class="bg" autoplay muted preload="auto" loop></video>
         </div>
         <div class="text-wrap">
           <p class="sub_title">가상으로 만든 작품을 실물로</p>
@@ -72,6 +72,7 @@
           </div>
         </div>
       </div>
+
       <!-- SLS -->
       <!-- <div class="align-wrap sls-wrap">
         <div class="slimg">
@@ -86,32 +87,35 @@
       </div> -->
     </section>
     <section class="process sec-size">
-      <div class="mo-wrap">
-        <div onclick=""><div class="circle" style="background-image: url('./asset/images/process1.png')"></div></div>
+      <div class="mo-wraps">
+        <div id="mo-modal"><div class="circle" style="background-image: url('./asset/images/process1.png')"></div></div>
         <span>3D 모델링</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
-      <div class="printing-wrap">
-        <a href="#"><div class="circle" style="background-image: url('./asset/images/process2.png')"></div></a>
+      <div class="printing-wraps">
+        <div class="circle" style="background-image: url('./asset/images/process2.png')"></div>
         <span>프린팅</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
-      <div class="after-wrap">
-        <a href="#"><div class="circle" style="background-image: url('./asset/images/process3.png')"></div></a>
+      <div class="after-wraps">
+        <div class="circle" style="background-image: url('./asset/images/process3.png')"></div>
         <span>후가공</span>
       </div>
+      <div class="modal" id="ismodal">
+        <div class="filter"></div>
+        <div class="modalbox-wrap">
+          <div class="text-wrap">
+            <h2>모델링</h2>
+            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+          </div>
+          <div class="imgbox">
+            <div class="bg-box"></div>
+          </div>
+        </div>
+        <ion-icon name="close-outline" id="out-modal"></ion-icon>
+      </div>
+      
     </section>
     <section class="recommend sec-size"></section>
-    <!-- <p class="main_sub">(with. 3D 프린터 정보공작소)</p> -->
-
-    <div class="modal">
-      <div class="filter"></div>
-      <div class="modalbox-wrap">
-        <div class="title">
-          <h2>modaltest</h2>
-        </div>
-      </div>
-    </div>
-
   </body>
 </html>
