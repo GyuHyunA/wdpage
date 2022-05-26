@@ -279,3 +279,41 @@
 .modal .modalbox-wrap .text-wrap {
   margin-right: 50px;
 }
+
+
+/* recommend */
+.recommend{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reco-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reco-wrap .img{
+  background-color: lightgray;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 25px;
+}
+
+.part2, .part3{
+  margin-left: 100px;
+}
+
+.part1, .part2, .part3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.part1 h2, .part2 h2, .part3 h2{
+  margin-top: 30px;
+}
