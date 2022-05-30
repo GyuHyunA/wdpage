@@ -12,14 +12,14 @@
   </head>
   <body>
     <div class="dot-contain">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+      <a href="#sec1"><div class="dot"></div></a>
+      <a href="#sec2"><div class="dot"></div></a>
+      <a href="#sec3"><div class="dot"></div></a>
+      <a href="#sec4"><div class="dot"></div></a>
+      <a href="#sec5"><div class="dot"></div></a>
     </div>
     <!-- main -->
-    <section class="main">
+    <section class="main" id="sec1">
       <div class="container">
         <!-- <div class="bg-img" style="background-image: url(./asset/images/mian_3dimg.png)"></div> -->
         <div class="video">
@@ -33,7 +33,7 @@
     </section>
 
     <!-- how -->
-    <section class="how align">
+    <section class="how align" id="sec2">
       <div class="how-container">
         <div class="hicon">
           <img src="./asset/icons/3dicon.png" alt="" />
@@ -47,7 +47,7 @@
     </section>
 
     <!-- printmethod -->
-    <section class="printmethod align">
+    <section class="printmethod align" id="sec3">
       <div class="printmethod-container">
         <div class="align-wrap fdm-wrap">
           <div class="fimg">
@@ -86,37 +86,66 @@
         </div>
       </div> -->
     </section>
-    <section class="process sec-size">
+    <section class="process sec-size" id="sec4">
       <div class="mo-wraps">
-        <div id="mo-modal"><div class="circle" style="background-image: url('./asset/images/process1.png')"></div></div>
+        <div id="mo-modal" class="circle" style="background-image: url('./asset/images/process1.png')"></div>
         <span>3D 모델링</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
       <div class="printing-wraps">
-        <div class="circle" style="background-image: url('./asset/images/process2.png')"></div>
+        <div id="pr-modal" class="circle" style="background-image: url('./asset/images/process2.png')"></div>
         <span>프린팅</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
       <div class="after-wraps">
-        <div class="circle" style="background-image: url('./asset/images/process3.png')"></div>
+        <div id="af-modal" class="circle" style="background-image: url('./asset/images/process3.png')"></div>
         <span>후가공</span>
       </div>
-      <div class="modal" id="ismodal">
+
+      <div class="modal" id="mo-ismodal">
         <div class="filter"></div>
         <div class="modalbox-wrap">
           <div class="text-wrap">
-            <h2>모델링</h2>
+            <h2>3D 모델링</h2>
             <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
           </div>
           <div class="imgbox">
             <div class="bg-box"></div>
           </div>
         </div>
-        <ion-icon name="close-outline" id="out-modal"></ion-icon>
+        <ion-icon name="close-outline" id="mo-out-modal"></ion-icon>
       </div>
-      
+
+      <div class="modal" id="pr-ismodal">
+        <div class="filter"></div>
+        <div class="modalbox-wrap">
+          <div class="text-wrap">
+            <h2>프린팅</h2>
+            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+          </div>
+          <div class="imgbox">
+            <div class="bg-box"></div>
+          </div>
+        </div>
+        <ion-icon name="close-outline" id="pr-out-modal"></ion-icon>
+      </div>
+
+      <div class="modal" id="af-ismodal">
+        <div class="filter"></div>
+        <div class="modalbox-wrap">
+          <div class="text-wrap">
+            <h2>후가공</h2>
+            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+          </div>
+          <div class="imgbox">
+            <div class="bg-box"></div>
+          </div>
+        </div>
+        <ion-icon name="close-outline" id="af-out-modal"></ion-icon>
+      </div>
+
     </section>
-    <section class="recommend sec-size">
+    <section class="recommend sec-size" id="sec5">
       <div class="reco-wrap">
         <div class="part1">
           <div class="img"></div>

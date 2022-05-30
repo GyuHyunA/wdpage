@@ -252,7 +252,7 @@
   padding: 100px;
 }
 
-#out-modal {
+[id*=out-modal] {
   cursor: pointer;
   font-size: 50px;
   position: absolute;
