@@ -80,7 +80,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1520px;
   height: 80vh;
   margin: 0 auto;
   text-align: center;
@@ -119,7 +118,8 @@
 }
 
 .printmethod .printmethod-container {
-  width: 1520px;
+  max-width: 1520px;
+  min-width: 1280px;
   margin: 0 auto;
 }
 
@@ -135,9 +135,12 @@
   margin-left: 128px;
 }
 .printmethod .printmethod-container .fdm-wrap .fimg .box {
-  width: 350px;
-  height: 350px;
-  background-color: #c4c4c4;
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: #c4c4c4; */
 }
 .printmethod .printmethod-container .fdm-wrap .text-wrap {
   margin-left: 100px;
@@ -154,9 +157,11 @@
   margin-right: 128px;
 }
 .printmethod .printmethod-container .sla-wrap .simg .box {
-  width: 350px;
-  height: 350px;
-  background-color: #c4c4c4;
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .printmethod .printmethod-container .sla-wrap .text-wrap {
   margin-right: 100px;
@@ -183,6 +188,7 @@
   margin-bottom: 30px;
 }
 
+/* process */
 .process {
   position: relative;
   width: 100vw;
@@ -194,7 +200,7 @@
 }
 
 .process .braket {
-  margin: 0 100px;
+  margin: 0 5vw;
   font-size: 40px;
 }
 
@@ -211,8 +217,11 @@
 }
 
 .circle {
-  width: 260px;
-  height: 260px;
+  width: 15vw;
+  height: 15vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #c4c4c4;
   border-radius: 50%;
   margin-bottom: 60px;
@@ -252,7 +261,7 @@
   padding: 100px;
 }
 
-[id*=out-modal] {
+[id*="out-modal"] {
   cursor: pointer;
   font-size: 50px;
   position: absolute;
@@ -280,9 +289,8 @@
   margin-right: 50px;
 }
 
-
 /* recommend */
-.recommend{
+.recommend {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -290,30 +298,39 @@
   justify-content: center;
 }
 
-.reco-wrap{
+.reco-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.reco-wrap .img{
+.reco-wrap .img {
   background-color: lightgray;
   width: 20vw;
   height: 20vw;
   border-radius: 25px;
 }
 
-.part2, .part3{
+.part2,
+.part3 {
   margin-left: 100px;
 }
 
-.part1, .part2, .part3{
+.part1,
+.part2,
+.part3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.part1 h2, .part2 h2, .part3 h2{
+.part1 h2,
+.part2 h2,
+.part3 h2 {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  
 }
