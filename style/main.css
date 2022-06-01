@@ -31,6 +31,10 @@
   height: 100vh;
 }
 
+.main .container .bg-img {
+  display: none;
+}
+
 .main .container {
   position: inherit;
   width: 100%;
@@ -80,7 +84,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1520px;
   height: 80vh;
   margin: 0 auto;
   text-align: center;
@@ -119,13 +122,12 @@
 }
 
 .printmethod .printmethod-container {
-  width: 1520px;
+  max-width: 1520px;
   margin: 0 auto;
 }
 
 .printmethod .printmethod-container .fdm-wrap {
   margin-top: 10vh;
-  /* height: 40vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -135,28 +137,43 @@
   margin-left: 128px;
 }
 .printmethod .printmethod-container .fdm-wrap .fimg .box {
-  width: 350px;
-  height: 350px;
-  background-color: #c4c4c4;
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: #c4c4c4; */
 }
 .printmethod .printmethod-container .fdm-wrap .text-wrap {
   margin-left: 100px;
 }
 
-.printmethod .printmethod-container .sla-wrap {
+.printmethod .printmethod-container .pc-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.mo-wrap {
+  display: none;
+}
+
+.printmethod .printmethod-container .pc-wrap .sla-wrap {
   margin-top: 10vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 10vh;
 }
 .printmethod .printmethod-container .sla-wrap .simg {
   margin-right: 128px;
 }
 .printmethod .printmethod-container .sla-wrap .simg .box {
-  width: 350px;
-  height: 350px;
-  background-color: #c4c4c4;
+  width: 25vw;
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .printmethod .printmethod-container .sla-wrap .text-wrap {
   margin-right: 100px;
@@ -165,7 +182,7 @@
 .printmethod h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 50px;
   margin-bottom: 36px;
 }
@@ -175,7 +192,6 @@
   font-size: 20px;
   line-height: 20px;
 }
-
 .printmethod p:nth-child(2) {
   margin-bottom: 10px;
 }
@@ -183,6 +199,7 @@
   margin-bottom: 30px;
 }
 
+/* process */
 .process {
   position: relative;
   width: 100vw;
@@ -194,7 +211,7 @@
 }
 
 .process .braket {
-  margin: 0 100px;
+  margin: 0 5vw;
   font-size: 40px;
 }
 
@@ -211,8 +228,11 @@
 }
 
 .circle {
-  width: 260px;
-  height: 260px;
+  width: 15vw;
+  height: 15vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #c4c4c4;
   border-radius: 50%;
   margin-bottom: 60px;
@@ -252,7 +272,7 @@
   padding: 100px;
 }
 
-[id*=out-modal] {
+[id*="out-modal"] {
   cursor: pointer;
   font-size: 50px;
   position: absolute;
@@ -280,9 +300,8 @@
   margin-right: 50px;
 }
 
-
 /* recommend */
-.recommend{
+.recommend {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -290,30 +309,153 @@
   justify-content: center;
 }
 
-.reco-wrap{
+.reco-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.reco-wrap .img{
+.reco-wrap .img {
   background-color: lightgray;
   width: 20vw;
   height: 20vw;
   border-radius: 25px;
 }
 
-.part2, .part3{
+.part2,
+.part3 {
   margin-left: 100px;
 }
 
-.part1, .part2, .part3{
+.part1,
+.part2,
+.part3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.part1 h2, .part2 h2, .part3 h2{
+.part1 h2,
+.part2 h2,
+.part3 h2 {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .printmethod .printmethod-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .printmethod h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 50px;
+    margin-bottom: 36px;
+  }
+  .printmethod p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main .container .bg-img {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main .container .video {
+    display: none;
+  }
+
+  .printmethod {
+    background-color: white;
+  }
+
+  .printmethod .printmethod-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap .fimg {
+    margin-left: 0px;
+  }
+
+  .printmethod .printmethod-container .mo-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+
+  .printmethod .printmethod-container .sla-wrap .simg {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+
+  .printmethod .printmethod-container .pc-wrap {
+    display: none;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap .text-wrap {
+    margin-left: 0px;
+  }
+  .printmethod .printmethod-container .sla-wrap .text-wrap {
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  /* 
+  .printmethod .printmethod-container .sla-wrap {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  } */
+
+  .printmethod h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .printmethod p {
+    font-style: normal;
+    text-align: center;
+  }
+  .process {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .process .braket {
+    margin: 20px 0;
+    transform: rotate(90deg);
+  }
+
+  .circle {
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: 0px;
+  }
 }

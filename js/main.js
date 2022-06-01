@@ -22,7 +22,6 @@ afoutmodal.addEventListener("click", afclose);
 function moclose() {
   moismodal.classList.remove("active");
 }
-
 function prclose() {
   prismodal.classList.remove("active");
 }
