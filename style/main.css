@@ -31,6 +31,10 @@
   height: 100vh;
 }
 
+.main .container .bg-img {
+  display: none;
+}
+
 .main .container {
   position: inherit;
   width: 100%;
@@ -119,13 +123,11 @@
 
 .printmethod .printmethod-container {
   max-width: 1520px;
-  min-width: 1280px;
   margin: 0 auto;
 }
 
 .printmethod .printmethod-container .fdm-wrap {
   margin-top: 10vh;
-  /* height: 40vh; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -146,12 +148,22 @@
   margin-left: 100px;
 }
 
-.printmethod .printmethod-container .sla-wrap {
+.printmethod .printmethod-container .pc-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.mo-wrap {
+  display: none;
+}
+
+.printmethod .printmethod-container .pc-wrap .sla-wrap {
   margin-top: 10vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 10vh;
 }
 .printmethod .printmethod-container .sla-wrap .simg {
   margin-right: 128px;
@@ -170,7 +182,7 @@
 .printmethod h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 50px;
   margin-bottom: 36px;
 }
@@ -180,7 +192,6 @@
   font-size: 20px;
   line-height: 20px;
 }
-
 .printmethod p:nth-child(2) {
   margin-bottom: 10px;
 }
@@ -332,5 +343,119 @@
 }
 
 @media screen and (max-width: 1280px) {
-  
+  .printmethod .printmethod-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .printmethod h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 50px;
+    margin-bottom: 36px;
+  }
+  .printmethod p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main .container .bg-img {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main .container .video {
+    display: none;
+  }
+
+  .printmethod {
+    background-color: white;
+  }
+
+  .printmethod .printmethod-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap .fimg {
+    margin-left: 0px;
+  }
+
+  .printmethod .printmethod-container .mo-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+
+  .printmethod .printmethod-container .sla-wrap .simg {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+
+  .printmethod .printmethod-container .pc-wrap {
+    display: none;
+  }
+
+  .printmethod .printmethod-container .fdm-wrap .text-wrap {
+    margin-left: 0px;
+  }
+  .printmethod .printmethod-container .sla-wrap .text-wrap {
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  /* 
+  .printmethod .printmethod-container .sla-wrap {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  } */
+
+  .printmethod h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .printmethod p {
+    font-style: normal;
+    text-align: center;
+  }
+  .process {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .process .braket {
+    margin: 20px 0;
+    transform: rotate(90deg);
+  }
+
+  .circle {
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: 0px;
+  }
 }
