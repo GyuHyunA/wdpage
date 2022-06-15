@@ -8,16 +8,17 @@
     <script async src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./asset/icons/3dfavi.ico" type="image/x-icon">
     <title>3D 프린터 정보 공작소</title>
   </head>
   <body>
-    <div class="dot-contain">
+    <!-- <div class="dot-contain">
       <a href="#sec1"><div class="dot"></div></a>
       <a href="#sec2"><div class="dot"></div></a>
       <a href="#sec3"><div class="dot"></div></a>
       <a href="#sec4"><div class="dot"></div></a>
       <a href="#sec5"><div class="dot"></div></a>
-    </div>
+    </div> -->
     <!-- main -->
     <section class="main" id="sec1">
       <div class="container">
@@ -47,46 +48,28 @@
     </section>
 
     <!-- printmethod -->
-    <section class="printmethod align" id="sec3">
-      <div class="printmethod-container">
-        <div class="align-wrap fdm-wrap">
-          <div class="fimg">
-            <div class="box" style="background-image: url('./asset/images/fdm.png')"></div>
-          </div>
-          <div class="text-wrap">
-            <h2>FDM</h2>
-            <p>FDM(Fused Deposition Modeling)은 재료를 녹는점 이상의 온도로 녹인 후 일정한</p>
-            <p>두께로 선을 그리면서 한 층씩 쌓아 올리는 방식의 프린터 이다</p>
-            <p>대중적인 프린터 방식으로 많은 사람들이 쉽게 접근하는 방식이다</p>
-          </div>
+    <section class="printmethod" id="sec3">
+      <div class="printer-wrap">
+        <div class="fdm-wrap">
+          <img src="./asset/images/fdm.png" alt="" />
+          <h2>FDM</h2>
+          <p><b>FDM(Fused Deposition Modeling)</b>은 재료를 녹는점 이상의 온도로 녹인 후 일정한 두께로</p>
+          <p>선을 그리면서 한 층씩 쌓아 올리는 방식의 프린터이다</p>
+          <p>대중적인 프린터 방식으로 많은 사람들이 쉽게 접근하는 방식이다</p>
         </div>
-        <div class="align-wrap sla-wrap">
-          <div class="pc-wrap">
-            <div class="text-wrap">
-              <h2>SLA</h2>
-              <p>SLA(Stereo Lithography Apparatus)은 가장 오래된 방식이며 레진이 담겨있는 수조에</p>
-              <p>UV레이저를 조사하여 레진이 굳어지면서 쌓아 올리는 프린터 방식이다</p>
-              <p>기계나 재료의 가격이 비싸 대중적으로 사용하기에는 무리가 있다</p>
-            </div>
-            <div class="simg">
-              <div class="box" style="background-image: url('./asset/images/sla.png')"></div>
-            </div>
-          </div>
-
-          <div class="mo-wrap">
-            <div class="simg">
-              <div class="box" style="background-image: url('./asset/images/sla.png')"></div>
-            </div>
-            <div class="text-wrap">
-              <h2>SLA</h2>
-              <p>SLA(Stereo Lithography Apparatus)은 가장 오래된 방식이며 레진이 담겨있는 수조에</p>
-              <p>UV레이저를 조사하여 레진이 굳어지면서 쌓아 올리는 프린터 방식이다</p>
-              <p>기계나 재료의 가격이 비싸 대중적으로 사용하기에는 무리가 있다</p>
-            </div>
-          </div>
+        <div class="sla-wrap">
+          <img src="./asset/images/sla.png" alt="" />
+          <h2>SLA</h2>
+          <p><b>SLA(Stereo Lithography Apparatus)</b>은 가장 오래된 방식이며 레진이 담겨있는 수조에</p>
+          <p>UV레이저를 조사하여 레진이 굳어지면서 쌓아 올리는 프린터 방식이다</p>
+          <p>기계나 재료의 가격이 비싸 대중적으로 사용하기에는 무리가 있다</p>
         </div>
       </div>
     </section>
+    <!-- <div class="line"></div> -->
+    <!-- <section class="printmethod">
+      
+    </section> -->
 
     <!-- process -->
     <section class="process sec-size" id="sec4">
@@ -107,7 +90,7 @@
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
       <div class="after-wraps">
-        <div class="circle" style="background-image: url('./asset/images/process3.png')" onmouseover="ovmo3()" onmouseout="outmo3()">
+        <div class="circle" style="background-image: url('./asset/images/a3.png')" onmouseover="ovmo3()" onmouseout="outmo3()">
           <div class="fi3"><!-- filter --></div>
           <button class="bt3" id="af-modal">더보기</button>
         </div>
@@ -117,46 +100,76 @@
       <div class="modal" id="mo-ismodal">
         <div class="filter"></div>
         <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="mo-out-modal"></ion-icon>
           <div class="text-wrap">
             <h2>3D 모델링</h2>
             <span>3D 모델링을 통해 자신이 원하는 입체 이미지를 만듭니다 </span>
           </div>
           <div class="imgbox">
-            <div class="bg-box"></div>
+            <div class="bg-box" style="background-image: url('asset/images/a1.png')"></div>
           </div>
         </div>
-        <!-- <ion-icon name="close-outline" id="mo-out-modal"></ion-icon> -->
-        <div id="mo-out-modal">나가기</div>
+
+        <div class="mo-modalbox-wrap">
+          <ion-icon name="close-outline" id="mmo-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/a1.png')"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>3D 모델링</h2>
+            <span>3D 모델링을 통해 자신이 원하는 입체 이미지를 만듭니다 </span>
+          </div>
+        </div>
       </div>
 
       <div class="modal" id="pr-ismodal">
         <div class="filter"></div>
         <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="pr-out-modal"></ion-icon>
           <div class="text-wrap">
             <h2>프린팅</h2>
             <span>3D 모델링으로 입체 이미지를 만든 것을 현실화 시키기 위해 출력하는 것입니다 </span>
           </div>
           <div class="imgbox">
-            <div class="bg-box"></div>
+            <div class="bg-box" style="background-image: url('asset/images/a2.png')"></div>
           </div>
         </div>
-        <!-- <ion-icon name="close-outline" id="pr-out-modal"></ion-icon> -->
-        <div id="pr-out-modal">나가기</div>
+
+        <div class="mo-modalbox-wrap">
+          <ion-icon name="close-outline" id="mpr-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/a2.png')"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>프린팅</h2>
+            <span>3D 모델링으로 입체 이미지를 만든 것을 현실화 시키기 위해 출력하는 것입니다 </span>
+          </div>
+        </div>
       </div>
 
       <div class="modal" id="af-ismodal">
         <div class="filter"></div>
         <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="af-out-modal"></ion-icon>
           <div class="text-wrap">
             <h2>후가공</h2>
             <span>출력할 출력물에 생긴 혹과 서포터, 브림을 제거하여 깔끔한 형태로 가공하고, 추가적으로 색을 입혀 완성합니다 </span>
           </div>
           <div class="imgbox">
-            <div class="bg-box"></div>
+            <div class="bg-box" style="background-image: url('asset/images/a3.png')"></div>
           </div>
         </div>
-        <!-- <ion-icon name="close-outline" id="af-out-modal"></ion-icon> -->
-        <div id="af-out-modal">나가기</div>
+
+        <div class="mo-modalbox-wrap">
+          <ion-icon name="close-outline" id="maf-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/a3.png')"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>후가공</h2>
+            <span>출력할 출력물에 생긴 혹과 서포터, 브림을 제거하여 깔끔한 형태로 가공하고, 추가적으로 색을 입혀 완성합니다 </span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -164,19 +177,129 @@
     <section class="recommend sec-size" id="sec5">
       <div class="reco-wrap">
         <div class="part1">
-          <div class="img"></div>
-          <h2>엔더 3 - pro k</h2>
+          <div class="img" id="en3-modal"></div>
+          <h2>Ender 3 - pro k</h2>
         </div>
+
         <div class="part2">
-          <div class="img"></div>
-          <h2>엔더 5</h2>
+          <div class="img" id="en5-modal"></div>
+          <h2>Ender 5</h2>
         </div>
+
         <div class="part3">
-          <div class="img"></div>
-          <h2>엔더 7</h2>
+          <div class="img" id="en7-modal"></div>
+          <h2>Ender 7</h2>
+        </div>
+      </div>
+
+      <div class="reco-modal" id="en3-ismodal">
+        <div class="reco-filter"></div>
+        <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="en3-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/e3.png'); border: 1px solid lightgray"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>ender3 - pro k</h2>
+            <table>
+              <tr>
+                <td class="t1">가격</td>
+                <td>280,000</td>
+              </tr>
+              <tr>
+                <td class="t1">제조사</td>
+                <td>Creality (중국)</td>
+              </tr>
+              <tr>
+                <td class="t1">출력사이즈</td>
+                <td>220 x 220 x 250 mm</td>
+              </tr>
+              <tr>
+                <td class="t1">제품크기</td>
+                <td>440 x 420 x 465 mm</td>
+              </tr>
+            </table>
+            <span>3D 프린터 가격 대비 가장 싼 가격으로, 간단한 모델링 출력이 가능하며
+              출력물의 완성도도 깔끔하고 좋습니다
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reco-modal" id="en5-ismodal">
+        <div class="reco-filter"></div>
+        <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="en5-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/e5.png'); border: 1px solid lightgray"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>ender5</h2>
+            <table>
+              <tr>
+                <td class="t1">가격</td>
+                <td>400,000</td>
+              </tr>
+              <tr>
+                <td class="t1">제조사</td>
+                <td>Creality (중국)</td>
+              </tr>
+              <tr>
+                <td class="t1">출력사이즈</td>
+                <td>350 x 350 x 400 mm</td>
+              </tr>
+              <tr>
+                <td class="t1">제품크기</td>
+                <td>666 x 632 x 619 mm</td>
+              </tr>
+            </table>
+            <span>대형 출력물을 출력하고 싶을 떄 사용하는 프린터 입니다
+              가격대비 넓은 출력 사이즈를 가지고 있어 큰 제품을 출력할때 좋습니다
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reco-modal" id="en7-ismodal">
+        <div class="reco-filter"></div>
+        <div class="modalbox-wrap">
+          <ion-icon name="close-outline" id="en7-out-modal"></ion-icon>
+          <div class="imgbox">
+            <div class="bg-box" style="background-image: url('asset/images/e7.png'); border: 1px solid lightgray"></div>
+          </div>
+          <div class="text-wrap">
+            <h2>ender7</h2>
+            <table>
+              <tr>
+                <td class="t1">가격</td>
+                <td>660,000</td>
+              </tr>
+              <tr>
+                <td class="t1">제조사</td>
+                <td>Creality (중국)</td>
+              </tr>
+
+              <tr>
+                <td class="t1">출력사이즈</td>
+                <td>250 x 250 x 300 mm</td>
+              </tr>
+              <tr>
+                <td class="t1">제품크기</td>
+                <td>430 x, 460 x 570 mm</td>
+              </tr>
+            </table>
+            <span>고속 출력에 특화된 프린터 입니다. 일반적인 프린터의 속력과는 다르게 빠르게
+              출력하고 싶은 사람들에게 추천합니다 
+            </span>
+          </div>
         </div>
       </div>
     </section>
-    <footer></footer>
+
+    <footer>
+      <span>3D 프린터 공작소</span>
+      <span>담당 : 안규현</span>
+      <span>Copyright © 3D WorkShop Inc. 2022 All Rights Reserved by GyuHyun. </span>
+    </footer>
   </body>
 </html>
