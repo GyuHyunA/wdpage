@@ -91,17 +91,26 @@
     <!-- process -->
     <section class="process sec-size" id="sec4">
       <div class="mo-wraps">
-        <div id="mo-modal" class="circle" style="background-image: url('./asset/images/process1.png')"></div>
+        <div class="circle" style="background-image: url('./asset/images/process1.png')" onmouseover="ovmo()" onmouseout="outmo()">
+          <div class="fi"><!-- filter --></div>
+          <button class="bt" id="mo-modal">더보기</button>
+        </div>
         <span>3D 모델링</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
       <div class="printing-wraps">
-        <div id="pr-modal" class="circle" style="background-image: url('./asset/images/process2.png')"></div>
+        <div class="circle" style="background-image: url('./asset/images/process2.png')" onmouseover="ovmo2()" onmouseout="outmo2()">
+          <div class="fi2"><!-- filter --></div>
+          <button class="bt2" id="pr-modal">더보기</button>
+        </div>
         <span>프린팅</span>
       </div>
       <div class="braket"><ion-icon name="chevron-forward-outline"></ion-icon></div>
       <div class="after-wraps">
-        <div id="af-modal" class="circle" style="background-image: url('./asset/images/process3.png')"></div>
+        <div class="circle" style="background-image: url('./asset/images/process3.png')" onmouseover="ovmo3()" onmouseout="outmo3()">
+          <div class="fi3"><!-- filter --></div>
+          <button class="bt3" id="af-modal">더보기</button>
+        </div>
         <span>후가공</span>
       </div>
 
@@ -110,13 +119,14 @@
         <div class="modalbox-wrap">
           <div class="text-wrap">
             <h2>3D 모델링</h2>
-            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+            <span>3D 모델링을 통해 자신이 원하는 입체 이미지를 만듭니다 </span>
           </div>
           <div class="imgbox">
             <div class="bg-box"></div>
           </div>
         </div>
-        <ion-icon name="close-outline" id="mo-out-modal"></ion-icon>
+        <!-- <ion-icon name="close-outline" id="mo-out-modal"></ion-icon> -->
+        <div id="mo-out-modal">나가기</div>
       </div>
 
       <div class="modal" id="pr-ismodal">
@@ -124,13 +134,14 @@
         <div class="modalbox-wrap">
           <div class="text-wrap">
             <h2>프린팅</h2>
-            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+            <span>3D 모델링으로 입체 이미지를 만든 것을 현실화 시키기 위해 출력하는 것입니다 </span>
           </div>
           <div class="imgbox">
             <div class="bg-box"></div>
           </div>
         </div>
-        <ion-icon name="close-outline" id="pr-out-modal"></ion-icon>
+        <!-- <ion-icon name="close-outline" id="pr-out-modal"></ion-icon> -->
+        <div id="pr-out-modal">나가기</div>
       </div>
 
       <div class="modal" id="af-ismodal">
@@ -138,13 +149,14 @@
         <div class="modalbox-wrap">
           <div class="text-wrap">
             <h2>후가공</h2>
-            <span>기존 2D 문서와는 다르게 3D 프린터는 입체화된 이미지 만을 이용하게 됩니다. </span>
+            <span>출력할 출력물에 생긴 혹과 서포터, 브림을 제거하여 깔끔한 형태로 가공하고, 추가적으로 색을 입혀 완성합니다 </span>
           </div>
           <div class="imgbox">
             <div class="bg-box"></div>
           </div>
         </div>
-        <ion-icon name="close-outline" id="af-out-modal"></ion-icon>
+        <!-- <ion-icon name="close-outline" id="af-out-modal"></ion-icon> -->
+        <div id="af-out-modal">나가기</div>
       </div>
     </section>
 
@@ -153,17 +165,18 @@
       <div class="reco-wrap">
         <div class="part1">
           <div class="img"></div>
-          <h2>추천 프린터1</h2>
+          <h2>엔더 3 - pro k</h2>
         </div>
         <div class="part2">
           <div class="img"></div>
-          <h2>추천 프린터1</h2>
+          <h2>엔더 5</h2>
         </div>
         <div class="part3">
           <div class="img"></div>
-          <h2>추천 프린터1</h2>
+          <h2>엔더 7</h2>
         </div>
       </div>
     </section>
+    <footer></footer>
   </body>
 </html>
