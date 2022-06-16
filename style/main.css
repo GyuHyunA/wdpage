@@ -694,14 +694,14 @@ footer span {
   }
 
   .circle {
-    width: 25vw;
-    height: 25vw;
+    width: 22vw;
+    height: 22vw;
     margin-bottom: 20px;
   }
 
   .circle .fi {
-    width: 20vw;
-    height: 20vw;
+    width: 22vw;
+    height: 22vw;
   }
   .circle .bt {
     position: absolute;
@@ -733,8 +733,8 @@ footer span {
     display: none;
   }
   .circle .fi3 {
-    width: 23vw;
-    height: 23vw;
+    width: 22vw;
+    height: 22vw;
   }
   .circle .bt3 {
     position: absolute;
@@ -815,8 +815,8 @@ footer span {
   }
 
   .reco-wrap .img {
-    width: 25vw;
-    height: 25vw;
+    width: 22vw;
+    height: 22vw;
   }
 
   .reco-modal {
